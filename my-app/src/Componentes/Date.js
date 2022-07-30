@@ -1,7 +1,8 @@
-import React from 'react'
 
 
- export default function newDay(date) {
+
+
+export default function NewDay(date) {
     let days = [
       "Sunday",
       "Monday",
@@ -20,12 +21,7 @@ import React from 'react'
     if (minutes < 10) {
       minutes = `0${minutes}`;
     }
+   let dia =  `${day} ${hour}:${minutes}`;
+    return dia;
+  }
   
-    return `${day} ${hour}:${minutes}`;
-  }
-  function formatDaysForecast(dateStamp) {
-    let date = new Date(dateStamp * 1000);
-    let day = date.getDay();
-    let days = ["Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat"];
-    return days[day];
-  }

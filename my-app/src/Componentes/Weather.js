@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import axios from "axios";
 
-const Weather = () => {
+const Weather = (props) => {
   const [city, setCity] = useState("");
   const [searchSubmit, setSearchSubmit] = useState(false);
   const [forecast, setForecast] = useState({});
@@ -45,6 +45,7 @@ const Weather = () => {
             <h3>{forecast.city}</h3>
             <img className='icon-1' src={forecast.icon} alt={forecast.description}/>
             <h1>{Math.round(forecast.temperature)}ºC</h1>
+            <h2> {props.dia}</h2>
         <ul className="form">
            <li className="form-li">{forecast.description}</li>
            <li className="form-li">{forecast.humidity}%</li>
