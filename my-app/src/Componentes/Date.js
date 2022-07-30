@@ -1,4 +1,7 @@
-function newDay(date) {
+import React from 'react'
+
+
+ export default function newDay(date) {
     let days = [
       "Sunday",
       "Monday",
