@@ -54,8 +54,10 @@ const Weather = (props) => {
          </div>
         );
         
-      } else {
-        return form;
+      } else{
+        return(
+          form
+        );
       }
 }
 
