@@ -8,7 +8,7 @@ const App = () => {
     <div className="App">
     <div className='App-header'>
       <Weather/>
-      </div>
+     </div>
     </div>
   )
 }

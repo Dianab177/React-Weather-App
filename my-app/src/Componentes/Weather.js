@@ -46,11 +46,11 @@ const Weather = (props) => {
             <img className='icon-1' src={forecast.icon} alt={forecast.description}/>
             <h1>{Math.round(forecast.temperature)}ºC</h1>
             <h2> {props.dia}</h2>
-        <ul className="form">
+         <ul className="form">
            <li className="form-li">{forecast.description}</li>
            <li className="form-li">{forecast.humidity}%</li>
            <li className="form-li">{forecast.wind}Km/h</li>
-        </ul>
+         </ul>
          </div>
         );
         
